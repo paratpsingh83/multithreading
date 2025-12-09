@@ -52,7 +52,7 @@ public class LiveLock {
                 System.out.println("Worker2 acquires the lock1...");
                 lock1.unlock();
             } else {
-                System.out.println("Worker1 can not acquires the lock2...");
+                System.out.println("Worker2 can not acquires the lock1...");
                 continue;
             }
             break;
