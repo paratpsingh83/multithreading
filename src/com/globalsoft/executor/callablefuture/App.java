@@ -31,6 +31,8 @@ public class App {
             list.add(future);
 
         }
+
+
         for (Future<String> f : list) {
             try {
                 System.out.println(f.get());
