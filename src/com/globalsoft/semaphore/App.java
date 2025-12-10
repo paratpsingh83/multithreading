@@ -45,7 +45,6 @@ public class App {
 
     public static void main(String[] args) {
         //Create multiple threads-executors
-
         ExecutorService service = Executors.newCachedThreadPool();
         for (int i = 0; i < 12; i++) {
             service.execute(new Runnable() {
