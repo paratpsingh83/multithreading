@@ -11,6 +11,9 @@ class BarrierWorker implements Runnable {
     private Random random;
     private CyclicBarrier cyclicBarrier;
 
+
+
+
     public BarrierWorker(int id, CyclicBarrier cyclicBarrier) {
         this.id = id;
         this.random = new Random();
