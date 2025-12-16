@@ -17,6 +17,8 @@ class BarrierWorker implements Runnable {
         this.cyclicBarrier = cyclicBarrier;
     }
 
+
+
     @Override
     public void run() {
         doWork();
