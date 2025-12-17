@@ -10,6 +10,7 @@ class FirstWorker implements Runnable {
         this.queue = queue;
     }
 
+
     @Override
     public void run() {
         int counter = 0;
