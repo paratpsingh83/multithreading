@@ -4,13 +4,12 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 class FirstWorker implements Runnable {
+
     private BlockingQueue<Integer> queue;
 
     public FirstWorker(BlockingQueue<Integer> queue) {
         this.queue = queue;
     }
-
-
 
     @Override
     public void run() {
@@ -40,7 +39,7 @@ class SecondWorker implements Runnable {
         while (true) {
             try {
                 int counter = queue.take();
-                System.out.println("Putting the item in the queue " + counter);
+                System.out.println("Taking the item from the queue " + counter);
                 Thread.sleep(300);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
@@ -48,7 +47,6 @@ class SecondWorker implements Runnable {
         }
     }
 }
-
 
 public class ArrayBlockingQueueExam {
 
